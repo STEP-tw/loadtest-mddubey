@@ -12,13 +12,18 @@ isEven =  function(number){
   This function takes a number and returns true or false
   based on whether the number is odd or not
 */
+isOdd =  function(number){
+  return !isEven(number);
+}
 
 /*
   square
   This function takes a number and returns the mathematical square
   of that number
 */
-
+square = function(number){
+  return number*number;
+}
 /*
   cube
   This function takes a number and returns the mathematical cube
