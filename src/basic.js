@@ -2,8 +2,11 @@
   isEven
   This function takes a number and returns true or false
   based on whether the number is even or not
-*/
 
+*/
+isEven =  function(number){
+  return number % 2 === 0;
+}
 /*
   isOdd
   This function takes a number and returns true or false
