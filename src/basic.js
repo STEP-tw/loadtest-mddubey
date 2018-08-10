@@ -59,14 +59,20 @@ const lcm = function(pahlaNumber, dusraNumber) {
   This function returns the simple interest calculated when given
   principle, period and rate of interest(in that order)
 */
-
+const simpleInterest = function(mool, samay, dar) {
+  return (mool * samay * dar) / 100;
+}
 
 /*
   compoundInterest
   This function returns the simple interest calculated when given
   principle, period and rate of interest annually(in that order)
 */
-
+const compoundInterest = function(mool, samay, dar, pataNahiKyaa) {
+  pataNahiKyaa = (pataNahiKyaa) ? pataNahiKyaa : 1;
+  let comp = Math.floor(samay * pataNahiKyaa);
+  return mool * Math.pow(((100 + dar / pataNahiKyaa) / 100), comp) - mool;
+};
 
 /*
   greatestOf
