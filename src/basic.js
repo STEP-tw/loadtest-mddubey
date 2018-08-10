@@ -30,7 +30,9 @@ square = function(number){
   of that number
 */
 
-
+cube=function(number){
+  return square(number)*number;
+}
 /*
   gcd
   This function returns the greatest common divisor of any two numbers
@@ -49,7 +51,7 @@ square = function(number){
   This function returns the simple interest calculated when given
   principle, period and rate of interest(in that order)
 */
-
+  
 
 /*
   compoundInterest
