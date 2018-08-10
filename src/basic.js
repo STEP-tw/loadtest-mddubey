@@ -78,7 +78,10 @@ const compoundInterest = function(mool, samay, dar, pataNahiKyaa) {
   greatestOf
   This function returns the greatest of three numbers
 */
-
+greatestOf =  function(pahlaNumber, dusraNumber, tisraNumber){
+  const sabsebada = Math.max(pahlaNumber, dusraNumber, tisraNumber);
+  return sabsebada;
+}
 
 /*
   averageOf
